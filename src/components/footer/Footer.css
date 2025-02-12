@@ -1,0 +1,14 @@
+.footer {
+    padding: 2.5rem 2rem 3.5rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-top: 1px solid var(--neutral-color);
+    position: sticky;
+    top: 0;
+    color: var(--neutral-color);
+    font-weight: 400;
+    gap: 0.5rem;
+    min-height: 15vh;
+}

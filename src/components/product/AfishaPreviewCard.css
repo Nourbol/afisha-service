@@ -1,0 +1,54 @@
+.afisha-preview-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 12.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.afisha-preview-details-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    color: var(--text-neutral-color);
+}
+
+.afisha-preview-details-container > p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.afisha-preview-image {
+    width: 12.875rem;
+    height: 18.125rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.afisha-preview-image:hover {
+    box-shadow: 0 1.25rem 0.75rem -1rem rgba(0,30,85,.1);
+    filter: brightness(90%);
+}
+
+.afisha-preview-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
+}
+
+.afisha-preview-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.buy-button-text {
+    font-weight: 600;
+    font-size: 14px;
+}

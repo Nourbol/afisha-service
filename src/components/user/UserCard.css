@@ -1,0 +1,29 @@
+.user-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1.25rem 0.75rem -1rem rgba(0,30,85,.1),0 0.5rem 1.5rem 1.125rem rgba(0,30,85,.05);
+    min-width: 15rem;
+    border-bottom-left-radius: 0.75rem;
+    background-color: var(--main-color);
+}
+
+.user-card > * {
+    padding: 1rem 1.75rem;
+}
+
+.user-card > p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.user-card > p {
+    border-bottom: 1px solid var(--neutral-color);
+}
+
+.user-card > *:last-child {
+    border-bottom-left-radius: 0.75rem;
+}
+
+.user-card > a:hover {
+    background-color: var(--neutral-color);
+}

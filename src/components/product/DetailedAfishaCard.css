@@ -1,0 +1,51 @@
+.detailed-afisha-card {
+    display: grid;
+    grid-template-columns: minmax(0,24fr) minmax(0,74fr);
+    gap: 16px;
+    padding-bottom: 40px;
+}
+
+.afisha-image {
+    width: 100%;
+    border-radius: 0.625rem;
+    object-fit: cover;
+}
+
+.afisha-content {
+    display: grid;
+    grid-template-columns: minmax(0,56fr) minmax(0,44fr);
+    grid-template-rows: repeat(3, fit-content(100%));
+    grid-row-gap: 24px;
+    row-gap: 24px;
+    grid-column-gap: 16px;
+    column-gap: 16px;
+}
+
+.afisha-title {
+    color: #151516;
+    grid-column-start: span 2;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.afisha-description {
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400
+}
+
+.afisha-section-heading {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #777d83;
+    margin-bottom: 8px;
+}
+
+.afisha-details {
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+}

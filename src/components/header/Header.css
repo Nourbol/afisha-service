@@ -1,0 +1,67 @@
+.header {
+    background-color: var(--main-color);
+}
+
+.header-utility-line {
+    padding: 1.25rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8.5rem;
+}
+
+.header-utility-line > .search-bar {
+    grid-column: 2;
+}
+
+.header-action-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.header-categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.25rem 14.5rem;
+    background-color: var(--secondary-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.6px;
+}
+
+.logo {
+    width: 6rem;
+}
+
+.user-card-wrapper {
+    position: absolute;
+    top: 4.75rem;
+    right: 0;
+    z-index: 999;
+}
+
+.header-user-logo {
+    width: 2.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header-user-logo:hover {
+    box-shadow: 0 1.25rem 0.75rem -1rem rgba(0,30,85,.1),0 0.5rem 1.5rem 1.125rem rgba(0,30,85,.05);
+}
+
+.login-button {
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+}
