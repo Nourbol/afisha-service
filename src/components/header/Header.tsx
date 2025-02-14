@@ -31,7 +31,7 @@ export const Header = ({categories = [], onMenuButtonClick = () => {}}: PropsTyp
                 </div>
             </div>
             <div className="header-categories">
-                {categories.map(category => (<a key={category.id}>{category.name}</a>))}
+                {categories.map(category => (<a href={`/category/${category.id}`} key={category.id}>{category.name}</a>))}
             </div>
         </header>
     );

@@ -1,7 +1,7 @@
 import {Catalog} from "../components/catalog/Catalog.tsx";
 import {AfishaPreview} from "../types/afisha.ts";
 import {useEffect, useState} from "react";
-import {searchAfishas} from "../service/products.ts";
+import {searchAfishas} from "../service/afishas.ts";
 import {useNavigate} from "react-router-dom";
 import {Heading} from "../components/heading/Heading.tsx";
 

@@ -2,7 +2,7 @@ import {Catalog} from "../components/catalog/Catalog.tsx";
 import {useEffect, useState} from "react";
 import {AfishaPreview} from "../types/afisha.ts";
 import {useNavigate, useSearchParams} from "react-router-dom";
-import {searchAfishas} from "../service/products.ts";
+import {searchAfishas} from "../service/afishas.ts";
 
 export const SearchProductsPage = () => {
     const [products, setProducts] = useState<AfishaPreview[]>([]);

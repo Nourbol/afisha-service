@@ -1,6 +1,6 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
-import {getAfisha} from "../service/products.ts";
+import {getAfisha} from "../service/afishas.ts";
 import {Afisha} from "../types/afisha.ts";
 import {DetailedAfishaCard} from "../components/product/DetailedAfishaCard.tsx";
 

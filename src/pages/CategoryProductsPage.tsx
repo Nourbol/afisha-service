@@ -1,27 +1,27 @@
 import {useEffect, useState} from "react";
 import {AfishaPreview} from "../types/afisha.ts";
 import {useNavigate, useParams} from "react-router-dom";
-import {getCategoryProducts} from "../service/products.ts";
+import {getCategoryAfishas} from "../service/afishas.ts";
 import {Catalog} from "../components/catalog/Catalog.tsx";
 import {getCategory} from "../service/categories.ts";
 
 export const CategoryProductsPage = () => {
-    const [products, setProducts] = useState<AfishaPreview[]>([]);
+    const [afisha, setAfisha] = useState<AfishaPreview[]>([]);
     const [page, setPage] = useState(0);
     const [categoryName, setCategoryName] = useState('');
     const navigate = useNavigate();
     const { categoryId } = useParams();
 
-    const handleProductClick = (product: AfishaPreview) => {
-        navigate(`/product/${product.id}`);
+    const handleAfishaClick = (product: AfishaPreview) => {
+        navigate(`/afisha/${product.id}`);
     };
 
     const handleLoadMore = () => setPage(prevState => prevState + 1);
 
     useEffect(() => {
         if (categoryId) {
-            getCategoryProducts(categoryId, { size: 24, page })
-                .then(response => setProducts(prevState => [...prevState, ...response]));
+            getCategoryAfishas(categoryId, { size: 24, page })
+                .then(response => setAfisha(prevState => [...prevState, ...response.content]));
         }
     }, [categoryId, page]);
 
@@ -34,7 +34,7 @@ export const CategoryProductsPage = () => {
     return (
         <div className="page">
             <h1>{categoryName}</h1>
-            <Catalog afishas={products} onAfishaClick={handleProductClick} onLoadMore={handleLoadMore}/>
+            <Catalog afishas={afisha} onAfishaClick={handleAfishaClick} onLoadMore={handleLoadMore}/>
         </div>
     );
 }
